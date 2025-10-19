@@ -1,0 +1,5 @@
+[[Package]]
+name      = "htop"
+description = "Improved top (interactive process viewer)"
+homepage   = "https://htop.dev/"
+latest_version   = "3.4.1"
