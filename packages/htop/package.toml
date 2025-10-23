@@ -1,5 +1,9 @@
-[package]
 name      = "htop"
 description = "Improved top (interactive process viewer)"
 homepage   = "https://htop.dev/"
-latest_version   = "3.4.1"
+versions = ["3.4.1"]
+
+[latest_versions]
+aarch64-unknown-linux-gnu = "3.4.1"
+x86_64-apple-darwin = "3.4.1"
+aarch64-apple-darwin = "3.4.1"
