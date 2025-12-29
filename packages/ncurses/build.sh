@@ -1,7 +1,7 @@
 #!/bin/sh
 cd ncurses-6.5
 
-./configure --prefix=$PACKIT_PACKAGE_PATH --enable-symlinks
+./configure --prefix=$PACKIT_PACKAGE_PATH --enable-symlinks --disable-cxx --without-cxx-binding
 # TODO: Add --enable-widec and implement symlink creation
 
 make

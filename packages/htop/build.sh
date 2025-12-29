@@ -1,5 +1,5 @@
 #!/bin/sh
-cd htop-3.4.1
+cd $PACKIT_ARGS_UNPACK_DIRECTORY
 
 ./autogen.sh
 

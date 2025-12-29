@@ -2,6 +2,9 @@ version    = "6.5"
 dependencies = []
 build_dependencies = []
 
+[script_args]
+unpack_directory = "ncurses-6.5"
+
 # Linux aarch64 (ARM64)
 [targets.aarch64-unknown-linux-gnu]
 url       = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz"
