@@ -2,6 +2,9 @@ version    = "2.72"
 dependencies = []
 build_dependencies = []
 
+[script_args]
+unpack_directory = "autoconf-2.72"
+
 # Linux aarch64 (ARM64)
 [targets.aarch64-unknown-linux-gnu]
 url       = "http://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.xz"

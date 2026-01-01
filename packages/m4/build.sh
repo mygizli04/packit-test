@@ -1,5 +1,5 @@
 #!/bin/sh
-cd autoconf-2.72
+cd $PACKIT_ARGS_UNPACK_DIRECTORY
 
 ./configure --prefix=$PACKIT_PACKAGE_PATH
 

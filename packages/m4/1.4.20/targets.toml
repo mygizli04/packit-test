@@ -2,6 +2,9 @@ version    = "1.4.20"
 dependencies = []
 build_dependencies = []
 
+[script_args]
+unpack_directory = "m4-1.4.20"
+
 # Linux aarch64 (ARM64)
 [targets.aarch64-unknown-linux-gnu]
 url       = "https://ftp.gnu.org/gnu/m4/m4-1.4.20.tar.xz"

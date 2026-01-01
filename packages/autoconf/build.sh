@@ -1,5 +1,5 @@
 #!/bin/sh
-cd automake-1.18.1
+cd $PACKIT_ARGS_UNPACK_DIRECTORY
 
 ./configure --prefix=$PACKIT_PACKAGE_PATH
 

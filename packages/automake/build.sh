@@ -1,5 +1,5 @@
 #!/bin/sh
-cd m4-1.4.20
+cd $PACKIT_ARGS_UNPACK_DIRECTORY
 
 ./configure --prefix=$PACKIT_PACKAGE_PATH
 

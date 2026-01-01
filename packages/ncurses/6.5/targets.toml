@@ -12,7 +12,9 @@ url       = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz"
 # macOS Intel
 [targets.x86_64-apple-darwin]
 url       = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz"
+skip_symlinking = true
 
 # macOS ARM (Apple Silicon)
 [targets.aarch64-apple-darwin]
 url       = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz"
+skip_symlinking = true
