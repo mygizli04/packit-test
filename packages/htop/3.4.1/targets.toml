@@ -1,5 +1,5 @@
 version    = "3.4.1"
-dependencies = ["ncurses"] # TODO: should be ncurses@>=6.0
+dependencies = ["ncurses@>6.0"]
 #build_dependencies = ["autoconf", "automake"] # TODO: maybe also needs libtool as build dependency
 build_dependencies = []
 
