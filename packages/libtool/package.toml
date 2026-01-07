@@ -1,0 +1,9 @@
+name      = "libtool"
+description = "A generic library support script"
+homepage   = "https://www.gnu.org/software/libtool/"
+versions = ["2.5.4"]
+
+[latest_versions]
+aarch64-unknown-linux-gnu = "2.5.4"
+x86_64-apple-darwin = "2.5.4"
+aarch64-apple-darwin = "2.5.4"

@@ -1,7 +1,6 @@
 version    = "3.4.1"
 dependencies = ["ncurses@>6.0"]
-#build_dependencies = ["autoconf", "automake"] # TODO: maybe also needs libtool as build dependency
-build_dependencies = []
+build_dependencies = ["autoconf", "automake", "libtool"]
 
 [script_args]
 unpack_directory = "htop-3.4.1"
