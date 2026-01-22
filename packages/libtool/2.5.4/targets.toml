@@ -12,9 +12,9 @@ url       = "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz"
 # macOS Intel
 [targets.x86_64-apple-darwin]
 url       = "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz"
-build_script = "macos_build.sh"
+build_script = "macos_build"
 
 # macOS ARM (Apple Silicon)
 [targets.aarch64-apple-darwin]
 url       = "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz"
-build_script = "macos_build.sh"
+build_script = "macos_build"
