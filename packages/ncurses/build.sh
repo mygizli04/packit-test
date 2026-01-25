@@ -1,7 +1,7 @@
 #!/bin/sh
 cd $PACKIT_ARGS_UNPACK_DIRECTORY
 
-./configure --prefix=$PACKIT_PACKAGE_PATH --enable-pc-files --with-pkg-config=$PACKIT_PACKAGE_PATH/lib/pkgconfig --enable-symlinks --enable-widec --with-shader --with-cxx-shared
+./configure --prefix=$PACKIT_PACKAGE_PATH --enable-pc-files --with-pkg-config-libdir=$PACKIT_PACKAGE_PATH/lib/pkgconfig --enable-symlinks --enable-widec --disable-cxx --without-cxx-binding
 
 make
 
