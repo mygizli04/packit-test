@@ -8,13 +8,16 @@ unpack_directory = "libtool-2.5.4"
 # Linux aarch64 (ARM64)
 [targets.aarch64-unknown-linux-gnu]
 url       = "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz"
+checksum  = "da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf"
 
 # macOS Intel
 [targets.x86_64-apple-darwin]
 url       = "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz"
+checksum  = "da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf"
 build_script = "macos_build"
 
 # macOS ARM (Apple Silicon)
 [targets.aarch64-apple-darwin]
 url       = "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz"
+checksum  = "da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf"
 build_script = "macos_build"
