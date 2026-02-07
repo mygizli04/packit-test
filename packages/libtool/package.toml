@@ -1,6 +1,6 @@
-name      = "libtool"
+name = "libtool"
 description = "A generic library support script"
-homepage   = "https://www.gnu.org/software/libtool/"
+homepage = "https://www.gnu.org/software/libtool/"
 versions = ["2.5.4"]
 
 [latest_versions]

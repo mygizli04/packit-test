@@ -1,6 +1,6 @@
-name      = "m4"
+name = "m4"
 description = "Macro processor for generating and transforming text"
-homepage   = "https://www.gnu.org/software/m4/"
+homepage = "https://www.gnu.org/software/m4/"
 versions = ["1.4.20"]
 
 [latest_versions]

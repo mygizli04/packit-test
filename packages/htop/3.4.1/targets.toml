@@ -1,4 +1,5 @@
-version    = "3.4.1"
+version = "3.4.1"
+license = "GPLv2+"
 dependencies = ["ncurses@>6.0"]
 build_dependencies = ["autoconf", "automake", "libtool"]
 
@@ -7,15 +8,15 @@ unpack_directory = "htop-3.4.1"
 
 # Linux aarch64 (ARM64)
 [targets.aarch64-unknown-linux-gnu]
-url       = "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz"
-checksum  = "af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf"
+url = "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz"
+checksum = "af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf"
 
 # macOS Intel
 [targets.x86_64-apple-darwin]
-url       = "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz"
-checksum  = "af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf"
+url = "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz"
+checksum = "af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf"
 
 # macOS ARM (Apple Silicon)
 [targets.aarch64-apple-darwin]
-url       = "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz"
-checksum  = "af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf" 
+url = "https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz"
+checksum = "af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf" 

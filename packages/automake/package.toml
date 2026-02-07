@@ -1,6 +1,6 @@
-name      = "automake"
+name = "automake"
 description = "Tool for automatically generating Makefile.in files"
-homepage   = "https://www.gnu.org/software/automake/"
+homepage = "https://www.gnu.org/software/automake/"
 versions = ["1.18.1"]
 
 [latest_versions]

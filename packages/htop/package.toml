@@ -1,6 +1,6 @@
-name      = "htop"
+name = "htop"
 description = "Improved top (interactive process viewer)"
-homepage   = "https://htop.dev/"
+homepage = "https://htop.dev/"
 versions = ["3.4.1"]
 
 [latest_versions]

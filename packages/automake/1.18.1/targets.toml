@@ -1,4 +1,5 @@
-version    = "1.18.1"
+version = "1.18.1"
+license = "GPLv2+"
 dependencies = ["autoconf@>=2.65"]
 build_dependencies = []
 
@@ -7,15 +8,15 @@ unpack_directory = "automake-1.18.1"
 
 # Linux aarch64 (ARM64)
 [targets.aarch64-unknown-linux-gnu]
-url       = "https://ftpmirror.gnu.org/gnu/automake/automake-1.18.1.tar.gz"
-checksum  = "63e585246d0fc8772dffdee0724f2f988146d1a3f1c756a3dc5cfbefa3c01915"
+url = "https://ftpmirror.gnu.org/gnu/automake/automake-1.18.1.tar.gz"
+checksum = "63e585246d0fc8772dffdee0724f2f988146d1a3f1c756a3dc5cfbefa3c01915"
 
 # macOS Intel
 [targets.x86_64-apple-darwin]
-url       = "https://ftpmirror.gnu.org/gnu/automake/automake-1.18.1.tar.gz"
-checksum  = "63e585246d0fc8772dffdee0724f2f988146d1a3f1c756a3dc5cfbefa3c01915"
+url = "https://ftpmirror.gnu.org/gnu/automake/automake-1.18.1.tar.gz"
+checksum = "63e585246d0fc8772dffdee0724f2f988146d1a3f1c756a3dc5cfbefa3c01915"
 
 # macOS ARM (Apple Silicon)
 [targets.aarch64-apple-darwin]
-url       = "https://ftpmirror.gnu.org/gnu/automake/automake-1.18.1.tar.gz"
-checksum  = "63e585246d0fc8772dffdee0724f2f988146d1a3f1c756a3dc5cfbefa3c01915"
+url = "https://ftpmirror.gnu.org/gnu/automake/automake-1.18.1.tar.gz"
+checksum = "63e585246d0fc8772dffdee0724f2f988146d1a3f1c756a3dc5cfbefa3c01915"
