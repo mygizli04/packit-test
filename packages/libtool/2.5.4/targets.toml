@@ -3,9 +3,6 @@ license = "LGPLv2+"
 dependencies = ["m4"]
 build_dependencies = []
 
-[script_args]
-unpack_directory = "libtool-2.5.4"
-
 [source]
 url = "https://ftpmirror.gnu.org/libtool/libtool-2.5.4.tar.gz"
 checksum = "da8ebb2ce4dcf46b90098daf962cffa68f4b4f62ea60f798d0ef12929ede6adf"

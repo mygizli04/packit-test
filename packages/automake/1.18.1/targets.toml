@@ -3,9 +3,6 @@ license = "GPLv2+"
 dependencies = ["autoconf@>=2.65"]
 build_dependencies = []
 
-[script_args]
-unpack_directory = "automake-1.18.1"
-
 [source]
 url = "https://ftpmirror.gnu.org/gnu/automake/automake-1.18.1.tar.gz"
 checksum = "63e585246d0fc8772dffdee0724f2f988146d1a3f1c756a3dc5cfbefa3c01915"

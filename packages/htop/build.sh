@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $PACKIT_ARGS_UNPACK_DIRECTORY
+cd htop-$PACKIT_PACKAGE_VERSION
 
 ./autogen.sh
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-cd $PACKIT_ARGS_UNPACK_DIRECTORY
+cd libtool-$PACKIT_PACKAGE_VERSION
 
 ./configure --prefix=$PACKIT_PACKAGE_PATH --disable-silent-rules --enable-ltdl-install
 
