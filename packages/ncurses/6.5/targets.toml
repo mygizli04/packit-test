@@ -6,19 +6,11 @@ build_dependencies = []
 [script_args]
 unpack_directory = "ncurses-6.5"
 
-# Linux aarch64 (ARM64)
-[targets.aarch64-unknown-linux-gnu]
+[source]
 url = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz"
 checksum = "136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6"
 
-# macOS Intel
-[targets.x86_64-apple-darwin]
-url = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz"
-checksum = "136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6"
-skip_symlinking = true
+[targets.linux]
 
-# macOS ARM (Apple Silicon)
-[targets.aarch64-apple-darwin]
-url = "https://invisible-mirror.net/archives/ncurses/ncurses-6.5.tar.gz"
-checksum = "136d91bc269a9a5785e5f9e980bc76ab57428f604ce3e5a5a90cebc767971cc6"
+[targets.mac]
 skip_symlinking = true

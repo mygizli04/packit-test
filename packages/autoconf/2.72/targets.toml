@@ -6,20 +6,12 @@ build_dependencies = []
 [script_args]
 unpack_directory = "autoconf-2.72"
 
-# Linux aarch64 (ARM64)
-[targets.aarch64-unknown-linux-gnu]
+[source]
 url = "http://ftpmirror.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz"
 checksum = "afb181a76e1ee72832f6581c0eddf8df032b83e2e0239ef79ebedc4467d92d6e"
+
+[targets.linux]
 dependencies = ["perl"]
 
-# macOS Intel
-[targets.x86_64-apple-darwin]
-url = "http://ftpmirror.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz"
-checksum = "afb181a76e1ee72832f6581c0eddf8df032b83e2e0239ef79ebedc4467d92d6e"
-# perl is provided by macos
-
-# macOS ARM (Apple Silicon)
-[targets.aarch64-apple-darwin]
-url = "http://ftpmirror.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz"
-checksum = "afb181a76e1ee72832f6581c0eddf8df032b83e2e0239ef79ebedc4467d92d6e"
+[targets.mac]
 # perl is provided by macos

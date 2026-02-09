@@ -6,19 +6,11 @@ build_dependencies = []
 [script_args]
 unpack_directory = "m4-1.4.20"
 
-# Linux aarch64 (ARM64)
-[targets.aarch64-unknown-linux-gnu]
+[source]
 url = "https://ftpmirror.gnu.org/gnu/m4/m4-1.4.20.tar.gz"
 checksum = "6ac4fc31ce440debe63987c2ebbf9d7b6634e67a7c3279257dc7361de8bdb3ef"
 
-# macOS Intel
-[targets.x86_64-apple-darwin]
-url = "https://ftpmirror.gnu.org/gnu/m4/m4-1.4.20.tar.gz"
-checksum = "6ac4fc31ce440debe63987c2ebbf9d7b6634e67a7c3279257dc7361de8bdb3ef"
-#TODO: prefix/active is implemented: skip_symlinking = true
+[targets.linux]
 
-# macOS ARM (Apple Silicon)
-[targets.aarch64-apple-darwin]
-url = "https://ftpmirror.gnu.org/gnu/m4/m4-1.4.20.tar.gz"
-checksum = "6ac4fc31ce440debe63987c2ebbf9d7b6634e67a7c3279257dc7361de8bdb3ef"
+[targets.mac]
 #TODO: prefix/active is implemented: skip_symlinking = true
