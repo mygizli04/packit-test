@@ -8,7 +8,8 @@ url = "http://ftpmirror.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz"
 checksum = "afb181a76e1ee72832f6581c0eddf8df032b83e2e0239ef79ebedc4467d92d6e"
 
 [targets.linux]
-dependencies = ["perl"]
+# TODO: Re-add perl as a dependency
+#dependencies = ["perl"]
 
 [targets.mac]
 # perl is provided by macos
