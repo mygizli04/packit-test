@@ -30,10 +30,11 @@ ln -s libpanelw.6.dylib lib/libpanel.6.dylib
 ln -s libpanelw.a lib/libpanel.a
 ln -s libpanelw_g.a lib/libpanel_g.a
 
-ln -s libncurses++w.6.dylib lib/libncurses++.dylib
-ln -s libncurses++w.6.dylib lib/libncurses++.6.dylib
-ln -s libncurses++w.a lib/libncurses++.a
-ln -s libncurses++w_g.a lib/libncurses++_g.a
+# TODO: enable C++ support
+# ln -s libncurses++w.6.dylib lib/libncurses++.dylib
+# ln -s libncurses++w.6.dylib lib/libncurses++.6.dylib
+# ln -s libncurses++w.a lib/libncurses++.a
+# ln -s libncurses++w_g.a lib/libncurses++_g.a
 
 ln -s libncurses.a lib/libcurses.a
 ln -s libncurses.dylib lib/libcurses.dylib
@@ -43,10 +44,10 @@ if [[ $PACKIT_TARGET =~ "linux" ]]; then
     ln -s libncurses.a lib/libtinfo.so
 fi
 
-ln -s pkgconfig/ncursesw.pc lib/pkgconfig/ncurses.pc
-ln -s pkgconfig/formw.pc lib/pkgconfig/form.pc
-ln -s pkgconfig/menuw.pc lib/pkgconfig/menu.pc
-ln -s pkgconfig/panelw.pc lib/pkgconfig/panel.pc
+ln -s ncursesw.pc lib/pkgconfig/ncurses.pc
+ln -s formw.pc lib/pkgconfig/form.pc
+ln -s menuw.pc lib/pkgconfig/menu.pc
+ln -s panelw.pc lib/pkgconfig/panel.pc
 
 ln -s ncursesw6-config bin/ncurses6-config
 
