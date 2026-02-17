@@ -1,7 +1,7 @@
 #!/bin/sh
 cd ncurses-$PACKIT_PACKAGE_VERSION
 
-./configure --prefix=$PACKIT_PACKAGE_PATH --enable-pc-files --with-pkg-config-libdir=$PACKIT_PACKAGE_PATH/lib/pkgconfig --enable-symlinks --enable-widec --disable-cxx --without-cxx-binding
+./configure --prefix=$PACKIT_PACKAGE_PATH --enable-pc-files --with-pkg-config-libdir=$PACKIT_PACKAGE_PATH/lib/pkgconfig --enable-symlinks --enable-widec --with-shared --disable-cxx --without-cxx-binding
 
 make
 
