@@ -4,7 +4,4 @@ homepage = "https://htop.dev/"
 versions = ["3.4.1"]
 
 [latest_versions]
-aarch64-unknown-linux-gnu = "3.4.1"
-x86_64-unknown-linux-gnu = "3.4.1"
-x86_64-apple-darwin = "3.4.1"
-aarch64-apple-darwin = "3.4.1"
+unix = "3.4.1"
