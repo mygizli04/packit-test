@@ -115,7 +115,8 @@ The following operators are available:
 | Operator    | Explanation                                                                          |
 | ----------- | ------------------------------------------------------------------------------------ |
 | No operator | Specifies a specific version.                                                        |
-| `-`         | Specifies a version range, for example `1-2`.                                        |
+| `-`         | Specifies a version range, for example `1-2` (does not include 2).                   |
+| `-=`        | Specifies an including version range, for example `1-2` (does include 2).            |
 | `<=`        | Specifies a version upper bound including the specified version, for example `<=2`.  |
 | `<`         | Specifies a version upper bound excluding the specified version, for example `<2`.   |
 | `>=`        | Specifies a version lower bound including the specified version, for example `>=1`.  |
