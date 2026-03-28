@@ -22,12 +22,6 @@ ln -s libncursesw_g.a lib/libncurses_g.a
 ln -s libpanelw.a lib/libpanel.a
 ln -s libpanelw_g.a lib/libpanel_g.a
 
-# TODO: enable C++ support
-# ln -s libncurses++w.6.dylib lib/libncurses++.dylib
-# ln -s libncurses++w.6.dylib lib/libncurses++.6.dylib
-# ln -s libncurses++w.a lib/libncurses++.a
-# ln -s libncurses++w_g.a lib/libncurses++_g.a
-
 ln -s libncurses.a lib/libcurses.a
 
 if [[ $PACKIT_TARGET =~ "apple" ]]; then
@@ -47,7 +41,22 @@ if [[ $PACKIT_TARGET =~ "apple" ]]; then
 fi
 
 if [[ $PACKIT_TARGET =~ "linux" ]]; then
-    ln -s libncurses.so lib/libtermcap.so
+    ln -s libformw.so.6.6 lib/libform.so
+    ln -s libformw.so.6.6 lib/libform.6.so
+    ln -s libformw.so.6.6 lib/libform.6.6.so
+
+    ln -s libmenuw.so.6.6 lib/libmenu.so
+    ln -s libmenuw.so.6.6 lib/libmenu.6.so
+    ln -s libmenuw.so.6.6 lib/libmenu.6.6.so
+
+    ln -s libncursesw.so.6.6 lib/libncurses.so
+    ln -s libncursesw.so.6.6 lib/libncurses.6.so
+    ln -s libncursesw.so.6.6 lib/libncurses.6.6.so
+
+    ln -s libpanelw.so.6.6 lib/libpanel.so
+    ln -s libpanelw.so.6.6 lib/libpanel.6.so
+    ln -s libpanelw.so.6.6 lib/libpanel.6.6.so
+
     ln -s libncurses.a lib/libtinfo.so
 fi
 
@@ -65,3 +74,9 @@ ln -s ncursesw/ncurses.h include/ncurses.h
 ln -s ncursesw/panel.h include/panel.h
 ln -s ncursesw/term.h include/term.h
 ln -s ncursesw/termcap.h include/termcap.h
+
+# TODO: enable C++ support
+# ln -s libncurses++w.6.dylib lib/libncurses++.dylib
+# ln -s libncurses++w.6.dylib lib/libncurses++.6.dylib
+# ln -s libncurses++w.a lib/libncurses++.a
+# ln -s libncurses++w_g.a lib/libncurses++_g.a
