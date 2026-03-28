@@ -10,23 +10,15 @@ make install
 # Change working directory to package path to create symlinks
 cd $PACKIT_PACKAGE_PATH
 
-ln -s libformw.6.dylib lib/libform.dylib
-ln -s libformw.6.dylib lib/libform.6.dylib
 ln -s libformw.a lib/libform.a
 ln -s libformw_g.a lib/libform_g.a
 
-ln -s libmenuw.6.dylib lib/libmenu.dylib
-ln -s libmenuw.6.dylib lib/libmenu.6.dylib
 ln -s libmenuw.a lib/libmenu.a
 ln -s libmenuw_g.a lib/libmenu_g.a
 
-ln -s libncursesw.6.dylib lib/libncurses.dylib
-ln -s libncursesw.6.dylib lib/libncurses.6.dylib
 ln -s libncursesw.a lib/libncurses.a
 ln -s libncursesw_g.a lib/libncurses_g.a
 
-ln -s libpanelw.6.dylib lib/libpanel.dylib
-ln -s libpanelw.6.dylib lib/libpanel.6.dylib
 ln -s libpanelw.a lib/libpanel.a
 ln -s libpanelw_g.a lib/libpanel_g.a
 
@@ -37,7 +29,22 @@ ln -s libpanelw_g.a lib/libpanel_g.a
 # ln -s libncurses++w_g.a lib/libncurses++_g.a
 
 ln -s libncurses.a lib/libcurses.a
-ln -s libncurses.dylib lib/libcurses.dylib
+
+if [[ $PACKIT_TARGET =~ "apple" ]]; then
+    ln -s libformw.6.dylib lib/libform.dylib
+    ln -s libformw.6.dylib lib/libform.6.dylib
+
+    ln -s libmenuw.6.dylib lib/libmenu.dylib
+    ln -s libmenuw.6.dylib lib/libmenu.6.dylib
+
+    ln -s libncursesw.6.dylib lib/libncurses.dylib
+    ln -s libncursesw.6.dylib lib/libncurses.6.dylib
+
+    ln -s libpanelw.6.dylib lib/libpanel.dylib
+    ln -s libpanelw.6.dylib lib/libpanel.6.dylib
+
+    ln -s libncurses.dylib lib/libcurses.dylib
+fi
 
 if [[ $PACKIT_TARGET =~ "linux" ]]; then
     ln -s libncurses.so lib/libtermcap.so
