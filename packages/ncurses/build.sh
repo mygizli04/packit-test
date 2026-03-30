@@ -24,7 +24,7 @@ ln -s libpanelw_g.a lib/libpanel_g.a
 
 ln -s libncurses.a lib/libcurses.a
 
-if [[ $PACKIT_TARGET =~ "apple" ]]; then
+if [ "$PACKIT_OS" = "mac" ]; then
     ln -s libformw.6.dylib lib/libform.dylib
     ln -s libformw.6.dylib lib/libform.6.dylib
 
@@ -40,7 +40,7 @@ if [[ $PACKIT_TARGET =~ "apple" ]]; then
     ln -s libncurses.dylib lib/libcurses.dylib
 fi
 
-if [[ $PACKIT_TARGET =~ "linux" ]]; then
+if [ "$PACKIT_OS" = "linux" ]; then
     ln -s libformw.so.6.6 lib/libform.so
     ln -s libformw.so.6.6 lib/libform.6.so
     ln -s libformw.so.6.6 lib/libform.6.6.so
