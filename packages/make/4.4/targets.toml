@@ -1,0 +1,15 @@
+version = "4.4"
+license = "GPLv3+"
+dependencies = []
+build_dependencies = []
+
+[source]
+url = "https://ftpmirror.gnu.org/gnu/make/make-4.4.tar.gz"
+mirrors = [
+  "https://ftp.gnu.org/gnu/make/make-4.4.tar.gz"
+]
+checksum = "581f4d4e872da74b3941c874215898a7d35802f03732bdccee1d4a7979105d18"
+
+[targets.unix]
+
+[targets.windows]
