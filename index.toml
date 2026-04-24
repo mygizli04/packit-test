@@ -10,6 +10,7 @@ supported_packages = [
     "nasm",
     "ncurses",
     "openssl",
+    "packit",
     "perl",
     "pkgconf",
     "readline",
