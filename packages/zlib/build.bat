@@ -28,7 +28,7 @@ if "%PACKIT_TARGET%"=="x86_64-pc-windows-msvc" (
 )
 
 REM Call vcvarsall.bat to set MSVC build environment
-call "%VCVARSALL%" "%ARCH%"
+call "%VCVARSALL%" %ARCH%
 
 REM Patch Makefile on ARM64 systems to remove the base option
 if "%PACKIT_TARGET%"=="aarch64-pc-windows-msvc" (
