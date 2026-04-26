@@ -1,7 +1,7 @@
 cd nasm-%PACKIT_ARGS_REAL_VERSION%
 
 REM Read Visual Studio install path
-for /f "tokens=* usebackq" %%i in (`"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere" -latest -property installationPath`) do (
+for /f "tokens=* usebackq" %%i in (`"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere" -latest -property installationPath -products *`) do (
     set VSPATH=%%i
 )
 if not exist "%VSPATH%" (
