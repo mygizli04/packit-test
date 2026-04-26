@@ -1,4 +1,5 @@
-copy build_w32.bat make-%PACKIT_PACKAGE_VERSION%
+echo %cd%
+PAUSE
 cd make-%PACKIT_PACKAGE_VERSION%
 
 call build_w32.bat --without-guile
