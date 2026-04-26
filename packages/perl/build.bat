@@ -7,14 +7,14 @@ for /f "tokens=* usebackq" %%i in (`"C:\Program Files (x86)\Microsoft Visual Stu
     set VSPATH=%%i
 )
 if not exist "%VSPATH%" (
-    echo Visual Studio cannot be loaded from %VSPATH%
+    echo Visual Studio cannot be loaded from "%VSPATH%"
     exit /b 1
 )
 
 REM Check if vcvarsall.bat exists
 set "VCVARSALL=%VSPATH%\VC\Auxiliary\Build\vcvarsall.bat"
 if not exist "%VCVARSALL%" (
-    echo vcvarsall.bat cannot be loaded from %VCVARSALL%
+    echo vcvarsall.bat cannot be loaded from "%VCVARSALL%"
     exit /b 1
 )
 echo Found vcvarsall.bat at %VCVARSALL%
@@ -37,7 +37,7 @@ if "%PACKIT_TARGET%"=="x86_64-pc-windows-msvc" (
 ) else if "%PACKIT_TARGET%"=="aarch64-pc-windows-msvc" (
     set ARCH=arm64
 ) else (
-    echo Target %PACKIT_TARGET% is not supported for this package
+    echo Target "%PACKIT_TARGET%" is not supported for this package
     exit /b 1
 )
 
