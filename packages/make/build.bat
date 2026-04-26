@@ -1,5 +1,5 @@
 echo %cd%
-PAUSE
+timeout /t 10 /nobreak
 cd make-%PACKIT_PACKAGE_VERSION%
 
 call build_w32.bat --without-guile
