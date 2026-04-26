@@ -1,7 +1,7 @@
 echo %cd%
 
-REM Windows moment. Apparently this is the best way of waiting 5 seconds because both the builtin timeout and pause utilities suck.
-ping -n 5 -w 1000 localhost > nul
+REM Windows moment. Apparently this is the best way of waiting 5 minutes because both the builtin timeout and pause utilities suck.
+ping -n 300 -w 1000 localhost > nul
 
 cd make-%PACKIT_PACKAGE_VERSION%
 
